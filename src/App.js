@@ -7,6 +7,7 @@ import Routes from './routes';
 import Footer from './components/footer';
 import Login from './components/login';
 import Logout from './components/logout';
+//import Logbtn from './components/logbtn';
 import { Navbar, Nav, NavLink, NavbarBrand } from 'react-bootstrap';
 import { Auth0Provider } from "@auth0/auth0-react";
 

@@ -10,6 +10,7 @@ import {
   Route
 } from 'react-router-dom';
 
+
 export default function MainRoutes() {
   return (
     <div>
@@ -18,9 +19,11 @@ export default function MainRoutes() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/regras" element={<Regras />} />
         <Route path="/splash" element={<Splash />} />
-        <Route path="/qrcode" element={<Qrcode />} />
-        https://botecao.vercel.app/
-        <Route path="*" element={<h1> Not Found </h1>} />
+        <Route path="/api" />
+        <Route path="/qrcode" element={<Qrcode />} >
+          <Route path="/:id" element={<Qrcode />} />
+        </Route>
+        <Route path="*" element={<h1> 404 - Not Found </h1>} />
       </Routes>
     </div>
   );

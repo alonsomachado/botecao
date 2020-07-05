@@ -12,7 +12,7 @@ export default function MainRoutes() {
     <div>
       <h1>Rotas</h1>
       <Routes>
-        <Route path="/" element={<h1> Home </h1>} />
+        <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="*" element={<h1> Not Found </h1>} />
       </Routes>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './LOGO_Botecao.png'; //'./logo.svg';
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {  BrowserRouter as Router} from 'react-router-dom';
@@ -13,12 +13,13 @@ function App() {
     //   </header>
     //</div>
      <Router>
+        <Routes />
       <div className="App">
        <header className="App-header">
          <img src={logo} className="App-logo" alt="logo" />
        </header>
       </div>
-      <Routes />
+      
     </Router>
   );
 }

@@ -5,6 +5,7 @@ const Profile = () => {
   const { user, isAuthenticated } = useAuth0();
 
   return (
+
     isAuthenticated && (
       <div>
         <h1>Profile</h1>
@@ -12,7 +13,8 @@ const Profile = () => {
         <h2>{user.name}</h2>
         <p>{user.email}</p>
       </div>
-    )
+      
+    ) 
   );
 };
 

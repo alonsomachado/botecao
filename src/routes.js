@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Profile from './pages/profile';
 import Home from './pages/home';
 import Regras from './pages/regras';
+import Splash from './pages/splash';
 import {
   Routes,
   Route
@@ -15,6 +16,7 @@ export default function MainRoutes() {
         <Route path="/" element={<Home />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/regras" element={<Regras />} />
+        <Route path="/splash" element={<Splash />} />
         <Route path="*" element={<h1> Not Found </h1>} />
       </Routes>
     </div>

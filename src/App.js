@@ -20,8 +20,8 @@ function App() {
             <img
               alt="Botecão logo"
               src="/favicon.ico"
-              width="30"
-              height="30"
+              width="50"
+              height="50"
               className="d-inline-block align-top"
             />{' '}
             Botecão
@@ -31,11 +31,6 @@ function App() {
           <Nav.Link href="/Profile">Profile</Nav.Link>
         </Navbar>
         <Routes />
-      <div className="App">
-       <header className="App-header">
-         <img src={logo} className="App-logo" alt="logo" />
-       </header>
-      </div>
       <Footer />
     </Router>
     

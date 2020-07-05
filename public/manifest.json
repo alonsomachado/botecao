@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Botecão",
+  "name": "Botecão acumule pontos ao ir ao BAR!",
   "icons": [
     {
       "src": "favicon.ico",

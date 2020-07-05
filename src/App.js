@@ -15,7 +15,7 @@ function App() {
     //   </header>
     //</div>
      <Router>
-        <Navbar bg="dark" variant="dark">
+        <Navbar bg="dark" variant="dark" expand="lg">
           <Navbar.Brand href="/">
             <img
               alt="Botecão logo"
@@ -26,10 +26,16 @@ function App() {
             />{' '}
             Botecão
           </Navbar.Brand>
-          <Nav.Link href="/">Home</Nav.Link>
-          <Nav.Link href="/Regras">Regras</Nav.Link>
-          <Nav.Link href="/Profile">Profile</Nav.Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto" id="basic-nav-dropdown">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/Regras">Regras</Nav.Link>
+            <Nav.Link href="/Profile">Profile</Nav.Link>
+          </Nav>
+          </Navbar.Collapse>
         </Navbar>
+
         <Routes />
       <Footer />
     </Router>

@@ -5,7 +5,10 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {  BrowserRouter as Router} from 'react-router-dom';
 import Routes from './routes';
 import Footer from './components/footer';
+import Login from './components/login';
+import Logout from './components/logout';
 import { Navbar, Nav, NavLink, NavbarBrand } from 'react-bootstrap';
+import { Auth0Provider } from "@auth0/auth0-react";
 
 function App() {
   return (
@@ -14,6 +17,13 @@ function App() {
     //     <img src={logo} className="App-logo" alt="logo" />
     //   </header>
     //</div>
+    <Auth0Provider
+    domain="megahack.eu.auth0.com"
+    clientId="nlJMq35UnhhRwCX6JzFSMVtXGjLHGoim"
+    redirectUri={window.location.origin}
+    >
+    
+  
      <Router>
         <Navbar bg="dark" variant="dark" expand="lg">
           <Navbar.Brand href="/">
@@ -32,6 +42,7 @@ function App() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/Regras">Regras</Nav.Link>
             <Nav.Link href="/Profile">Profile</Nav.Link>
+            <Login />
           </Nav>
           </Navbar.Collapse>
         </Navbar>
@@ -39,6 +50,7 @@ function App() {
         <Routes />
       <Footer />
     </Router>
+    </Auth0Provider>
     
   );
 }

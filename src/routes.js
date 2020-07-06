@@ -5,11 +5,12 @@ import Home from './pages/home';
 import Regras from './pages/regras';
 import Splash from './pages/splash';
 import Qrcode from './pages/qrcode';
+import Qrcodeid from './pages/qrcodeid';
 import {
   Routes,
   Route
 } from 'react-router-dom';
-
+//<Route path="*" element={<h1> 404 - Not Found </h1>} />
 
 export default function MainRoutes() {
   return (
@@ -19,11 +20,10 @@ export default function MainRoutes() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/regras" element={<Regras />} />
         <Route path="/splash" element={<Splash />} />
-        <Route path="/api" />
         <Route path="/qrcode" element={<Qrcode />} >
-          <Route path="/:id" element={<Qrcode />} />
+          <Route path="/:id" element={<Qrcodeid />} />
         </Route>
-        <Route path="*" element={<h1> 404 - Not Found </h1>} />
+        
       </Routes>
     </div>
   );

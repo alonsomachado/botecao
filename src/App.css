@@ -1,3 +1,4 @@
+/* Cor padrao BOTECAO #F8971D */
 .App {
   text-align: center;
 }
@@ -26,6 +27,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #1d21f8 !important;
 }
 
 @keyframes App-logo-spin {

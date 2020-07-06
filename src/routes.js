@@ -11,6 +11,7 @@ import {
   Route
 } from 'react-router-dom';
 //<Route path="*" element={<h1> 404 - Not Found </h1>} />
+//<Route path="/api" element={<Api />} /> //Não consigo importar API, testar no POSTMAN
 
 export default function MainRoutes() {
   return (
